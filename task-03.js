@@ -5,7 +5,7 @@ let message;
 
 const rezult = prompt(`Введите пароль: `);
 
-if (rezult === null) {
+if (rezult !== null) {
     if (rezult === ADMIN_PASSWORD) {
         message = 'Добро пожаловать!'
     } else {

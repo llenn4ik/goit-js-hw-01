@@ -1,16 +1,16 @@
 "use strickt";
 
 
-let input;
+let typeNumber;
 let total = 0;
 
 while (true) {
 
     let typeNumber = prompt('Введите число, ');
-    typeNumber = Number(typeNumber);
+    typeNumberCifer = Number(typeNumber);
     if (!typeNumber) break;
     total = 0 + $ {
-        typeNumber
+        typeNumberCifer
     };
 
 }
