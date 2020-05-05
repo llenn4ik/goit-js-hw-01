@@ -1,21 +1,21 @@
-"use strickt";
+"use strict";
 
 const userCredits = 23580;
 const pricePerDroid = 3000;
 
-let rezult = prompt(`Введите количество дроидов:`);
+let calk = prompt(`Введите количество дроидов:`);
 
-rezultNum = Number(rezult);
+const calktNum = Number(calk);
 
-let totalPrice = rezultNum * pricePerDroid;
+let totalPrice = calkNum * pricePerDroid;
 
 const userBalance = userCredits - totalPrice;
 
-if (rezult === null) {
+if (calk === null) {
     message = `Отменено пользователем!`;
 } else {
     if (totalPrice <= userCredits) {
-        message = `Вы купили ${rezultNum} дроидов, на счету осталось ${userBalance}кредитов.`;
+        message = `Вы купили ${calkNum} дроидов, на счету осталось ${userBalance}кредитов.`;
     } else {
         message = "Недостаточно средств на счету!";
     }

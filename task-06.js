@@ -4,14 +4,17 @@
 let typeNumber;
 let total = 0;
 
-while (true) {
+while (input !== null) {
 
-    let typeNumber = prompt('Введите число, ');
+    typeNumber = prompt('Введите число, ');
     typeNumberCifer = Number(typeNumber);
-    if (!typeNumber) break;
-    total = 0 + $ {
-        typeNumberCifer
-    };
-
-}
-alert(`Общая сумма:  ${total}`);
+    if (Number.isNaN(typeNumber)) {
+        alert('Было введено не число, попробуйте еще раз!');
+        continue;
+    }
+    if (typeNumber === null) {
+        alert(`Общая сумма чисел равна ${total}!`);
+        break;
+    }
+    total += typeNumberCifer
+};
