@@ -1,4 +1,4 @@
-"use strickt";
+"use strict";
 
 const PRINT_COUNTRY = 'Напишите название страны в которую нужно доставить товар';
 const CANCEL_BY_USER = 'Отменено пользователем!';
